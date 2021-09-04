@@ -1,4 +1,38 @@
 ---
 label: Hostel Test 1
 hide_body: false
-fields: []
+fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
+- name: description
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Description
+- name: country
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - Turkey
+    - Ukraine
+    - Germany
+    - Serbia
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Country
+- name: images
+  type: image_gallery
+  config: {}
+  label: Images
