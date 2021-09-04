@@ -11,9 +11,9 @@ sections:
   match: "**/*"
 - type: heading
   label: Heading
-upload_dir: uploads
+upload_dir: public/static/upload
 public_path: "/uploads"
-front_matter_path: "/public/static/upload"
+front_matter_path: "/public"
 use_front_matter_path: true
 file_template: ":filename:"
 build:
